@@ -1,0 +1,194 @@
+.logo{
+  width: 75px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.contact-us{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Bodoni Moda", serif;
+  margin: 0px;
+}
+.post-image-anime{
+  width: 300px;
+  height: 500px;
+}
+.content-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 50px 100px;
+}
+.content-grid p, a{
+  font-family: "Roboto Flex", sans-serif;
+}
+.content{
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+}
+.postify{
+  font-weight: 300;
+}
+.computer-guy-div{
+  justify-self: end;
+}
+.email-grid{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  margin-left: 30px;
+  align-items: center;
+  margin-top: 50px;
+
+}
+.email-title{
+  font-weight: 300;
+  font-size: 18px;
+}
+.mail-id{
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.icon-grid{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  align-items: center;
+  margin-top: 50px;
+}
+.thankyou{
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 30px;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+@media (max-width:520px) {
+  .logo{
+    width: 45px;
+  }
+  .contact-us{
+    font-size: 18px;
+  }
+  .post-image-anime{
+    width: 150px;
+    height: 150px;
+  }
+  .content-grid{
+    margin: 25px;
+  }
+  .content{
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .email-grid{
+    margin-top: 20px;
+  }
+  .email-title{
+    font-size: 8px;
+  }
+  .mail-id{
+    font-size: 8px;
+  }
+  .icon-grid{
+    grid-template-columns: 50px 50px 50px 50px;
+    margin-top: 20px;
+  }
+  .icon{
+    width: 20px;
+  }
+  .thankyou{
+    font-size: 8px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width:522px) and (max-width:750px){
+  .logo{
+    width: 55px;
+  }
+  .contact-us{
+    font-size: 22px;
+  }
+  .post-image-anime{
+    width: 210px;
+    height: 210px;
+  }
+  .content-grid{
+    margin: 30px;
+  }
+  .content{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .email-grid{
+    margin-top: 25px;
+  }
+  .email-title{
+    font-size: 12px;
+  }
+  .mail-id{
+    font-size: 12px;
+  }
+  .icon-grid{
+    grid-template-columns: 70px 70px 70px 70px;
+    margin-top: 25px;
+  }
+  .icon{
+    width: 30px;
+  }
+  .thankyou{
+    font-size: 12px;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width:751px) and (max-width:900px) {
+  .logo{
+    width: 65px;
+  }
+  .contact-us{
+    font-size: 26px;
+  }
+  .post-image-anime{
+    width: 280px;
+    height: 280px;
+  }
+  .content-grid{
+    margin: 35px;
+  }
+  .content{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .email-grid{
+    margin-top: 30px;
+  }
+  .email-title{
+    font-size: 14px;
+  }
+  .mail-id{
+    font-size: 14px;
+  }
+  .icon-grid{
+    grid-template-columns: 85px 85px 85px 85px;
+    margin-top: 30px;
+  }
+  .icon{
+    width: 36px;
+  }
+  .thankyou{
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:900px) and (max-width:120px){
+  .content-grid{
+    column-gap: 50px;
+    margin: 30px 50px;
+  }
+}

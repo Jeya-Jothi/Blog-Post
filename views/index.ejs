@@ -1,0 +1,60 @@
+<%- include("partials/header.ejs") %>
+
+<div class="card">
+  <% if(fullMessage.length>0){ %>
+      <% for (let i = 0; i < fullMessage.length; i++) { %>
+        <div class=" js-card" title="View your post" data-index-id ="<%= i %>">
+          <div class="grid-content">
+            <div class="title-delete">
+              <div>
+                <p class="title">
+                  <%= fullMessage[i].title %> 
+                </p>
+              </div>
+              <div class="edit-delete">
+                <div class="edit">
+                  <img src="/images/edit icon.svg" alt="edit logo" class="edit-icon js-edit-icon" data-id="<%= i %>" title="Edit the post">
+                  <!-- <div class="tooltip"><p>Edit</p></div> -->
+                </div>
+                <div>
+                  <form action="/delete" method="POST">
+                    <button type="button" class="delete-icon-btn js-delete-btn" title="Delete the post" data-index-id ="<%= i %>">
+                      <img src="/images/Delete icon.png" class="delete-icon" >
+                  </button>
+                </form>
+                </div>
+            </div>
+            </div>
+
+            <div>
+              <p class="content">
+                <% if(fullMessage[i].content.length<=20){ %>
+                  <%= fullMessage[i].content %>
+                  <% } else { %>
+                <%= fullMessage[i].content.slice(0,20) %>...
+                  <% } %>
+              </p>
+            </div>
+          </div>
+        </div>
+          <% } %> 
+</div>
+  <% } else {%>
+  <p>No Posts Yet!</p>
+  <% } %>
+
+  <!-- confirmation popup modal -->
+ <div id="confirmationModal" class="hidden modal">
+  <div class="modal-content">
+    <p>Do you want to delete this post?</p>
+    <form action="/delete" id="deleteForm" method="POST">
+      <!-- <input type="hidden" name="index" id="postIndex"> -->
+      <button type="submit" class="btn-yes js-btn-yes" title="Delete it">Yes</button>
+      <button type="button" class="btn-no js-btn-no" title="Not now">No</button>
+    </form>
+
+  </div>
+ </div>   
+
+
+  <%- include("partials/footer.ejs") %>

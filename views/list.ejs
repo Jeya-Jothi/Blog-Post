@@ -1,0 +1,53 @@
+<%- include("partials/header.ejs") %>
+
+<% if(fullMessage.length>0){ %>
+  <div class="content-menubar">
+    <div>
+      <p>POST TITLE</p>
+    </div>
+    <div>
+      <p>POST TIME</p>
+    </div>
+    <div>
+      <p>POST DATE</p>
+    </div>
+  </div>
+  <% for (let i = 0; i < fullMessage.length; i++) { %>
+    <div class="our-contents js-our-content" data-index-id = "<%= i %>">
+      <div>
+        <p class="content-title"><%= fullMessage[i].title  %></p>
+      </div>
+      <div>
+        <p class="time-para"><%= fullMessage[i].time  %></p>
+      </div>
+      <div>
+        <p class="date-para"><%= fullMessage[i].date %></p>
+      </div>
+    </div>
+  <% } %>
+<% } else { %>
+  <div class="content-menubar">
+    <div>
+      <p>POST TITLE</p>
+    </div>
+    <div>
+      <p>POST TIME</p>
+    </div>
+    <div>
+      <p>POST DATE</p>
+    </div>
+  </div>
+  <div class="content-menubar ash">
+    <div>
+      <p>--</p>
+    </div>
+    <div>
+      <p>--</p>
+    </div>
+    <div>
+      <p>--</p>
+    </div>
+  </div>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

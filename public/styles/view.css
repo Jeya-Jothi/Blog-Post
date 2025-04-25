@@ -1,0 +1,105 @@
+.view-content{
+  margin: 40px 0px 0px 20px;
+  background-color: white;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  border-radius: 5px;
+  border: 2px solid #dadada;
+}
+.edit-date{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.view-content p {
+  font-family:  "Montserrat",sans-serif;
+}
+.time-date{
+  justify-self: end;
+}
+.title-view{
+  font-size: 20px;
+  text-align: center;
+  font-family:  "Montserrat",sans-serif;
+  font-weight: 500;
+}
+.content-view{
+  font-size: 15px;
+}
+.time-date-view{
+  font-size: 10px;
+  color: gray;
+}
+.edit-icon{
+  width: 20px;
+  transition: display 0.15s;
+}
+
+.edit{
+  position: relative;
+}
+.tooltip{
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(10, 10, 10, 0.381);
+  font-size: 12px;
+  padding: 1px 5px;
+  left: 5px;
+  border-radius: 7px;
+  color: white;
+  transition: display 0.15s;
+}
+
+.edit-icon:hover + .tooltip{
+  display: block;
+}
+
+.edit-icon:active{
+  opacity: 0.8;
+}
+@media (max-width:420px) {
+  .edit-icon{
+    width: 15px;
+  }
+  .title-view{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .content-view{
+    font-size: 10px;
+  }
+  .time-date-view{
+    white-space: nowrap;
+    font-size: 8px;
+  }
+  .view-content{
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    row-gap: 10px;
+  }
+}
+@media (min-width:421px) and (max-width:600px) {
+  .edit-icon{
+    width: 18px;
+  }
+  .title-view{
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  .content-view{
+    font-size: 14px;
+  }
+  .time-date-view{
+    white-space: nowrap;
+    font-size: 10px;
+  }
+  .view-content{
+    padding: 15px 25px;
+    margin-top: 25px;
+    row-gap: 15px;
+  }
+}

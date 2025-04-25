@@ -1,0 +1,102 @@
+body{
+  background-color: rgb(244, 245, 245);
+  margin-top: 50px;
+  margin-left: 120px;
+  /* for top and left*/
+  /* box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3), inset 7px 0 9px -7px rgba(0,0,0,0.3);  */
+  padding: 50px;
+}
+p{
+  margin: 0px;
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: start;
+}
+/* Each card */
+.grid-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  transition: box-shadow 0.15s;
+}
+.delete-icon{
+  width: 15px;
+}
+.edit-delete{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.content{
+  font-size: 16px;
+}
+.grid-content:hover{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.title-delete{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.delete-icon-btn{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width:600px) {
+  .card{
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+  }
+  .grid-content{
+    height: 50px;
+    margin-top: 10px;
+  }
+  .delete-icon{
+    width: 10px;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .content{
+    font-size: 14px;
+  }
+  body{
+    padding: 20px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width:601px) and (max-width:900px) {
+  .card{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-content{
+    height: 70px;
+  }
+}
+
+@media (min-width:901px) and (max-width:1200px) {
+  .card{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+

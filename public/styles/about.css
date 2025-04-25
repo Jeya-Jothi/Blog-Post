@@ -1,0 +1,384 @@
+body{
+  margin-bottom: 200px;
+}
+.logo{
+  width: 75px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.about-me{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Bodoni Moda", serif;
+  margin: 0px;
+}
+.content{
+  margin: 0px 100px;
+}
+.post-image-anime{
+  width: 300px;
+  height: 500px;
+}
+.about-webpage{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+  column-gap: 20px;
+}
+.welcome-para{
+  margin: 0px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 200;
+}
+.phone-guy-div{
+  justify-self: end;
+}
+.postify{
+  font-weight: 300;
+}
+.features{
+  margin-top: 70px;
+}
+.features-title, .why-ts-wp, .journey-title{
+  margin: 0px;
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  column-gap: 20px;
+}
+.cards p, .why-ts-wp-content p, .journey-detail{
+  font-family: "Roboto Flex", sans-serif;
+}
+.feature-list{
+  background-color: rgb(245, 245, 245);
+  padding: 20px 40px;
+  border-radius: 30px;
+  /* display: grid;
+  grid-template-rows: 1fr; */
+  border: 1px solid rgb(227, 225, 225);
+}
+.feature-list-title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+.feature-list-content{
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify
+}
+.why-ts-wp{
+  margin-top: 60px;
+}
+.detail{
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 200;
+}
+.aim{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 60px;
+}
+.aim-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin:60px 100px;
+  column-gap: 10px;
+}
+.aim-grid div{
+  padding: 10px 20px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  font-weight: 300;
+  border: 1px solid rgb(227, 225, 225);
+}
+.journey-title{
+  margin: 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.journey-detail{
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 30px;
+}
+@media (max-width:520px) {
+  body{
+    margin-bottom: 20px;
+  }
+  .content{
+    margin:0px 25px;
+  }
+  .about-me, .features-title, .why-ts-wp, .journey-title{
+    font-size: 18px;
+  }
+  .logo{
+    width: 45px;
+  }
+  .about-webpage{
+    column-gap: 5px;
+    margin-top: 20px;
+  }
+  .welcome-para{
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .post-image-anime{
+    width: 150px;
+    height: 150px;
+  }
+  .features{
+    margin-top: 20px;
+  }
+  .features-title{
+    margin-bottom: 30px;
+  }
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .feature-list{
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  .feature-list-title{
+    font-size: 12px;
+    font-weight: 200;
+  }
+  .feature-list-content{
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 10px;
+
+  }
+  .why-ts-wp{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .detail{
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 200;
+    line-height: 13px;
+  }
+  .aim{
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .aim-grid{
+    margin:20px 10px;
+    column-gap: 10px;
+  }
+  .aim-grid div{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 200;
+  }
+  .aim-grid div p{
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .journey-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .journey-detail{
+    font-size: 8px;
+    line-height: 13px;
+  }
+}
+
+@media (min-width:521px) and (max-width:750px) {
+  body{
+    margin-bottom: 30px;
+  }
+  .content{
+    margin:0px 45px;
+  }
+  .about-me, .features-title, .why-ts-wp, .journey-title{
+    font-size: 22px;
+  }
+  .logo{
+    width: 55px;
+  }
+  .about-webpage{
+    column-gap: 8px;
+    margin-top: 25px;
+  }
+  .welcome-para{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .post-image-anime{
+    width: 210px;
+    height: 210px;
+  }
+  .features{
+    margin-top: 25px;
+  }
+  .features-title{
+    margin-bottom: 35px;
+  }
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  .feature-list{
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  .feature-list-title{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .feature-list-content{
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 14px;
+  }
+  .why-ts-wp{
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .detail{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 200;
+    line-height: 16px;
+  }
+  .aim{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .aim-grid{
+    margin:25px 15px;
+    column-gap: 15px;
+  }
+  .aim-grid div{
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 300;
+  }
+  .aim-grid div p{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .journey-title{
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .journey-detail{
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width:751px) and (max-width:900px) {
+  body{
+    margin-bottom: 40px;
+  }
+  .content{
+    margin:0px 60px
+  }
+  .about-me, .features-title, .why-ts-wp, .journey-title{
+    font-size: 26px;
+  }
+  .logo{
+    width: 65px
+  }
+  .about-webpage{
+    column-gap: 10px;
+    margin-top: 30px;
+  }
+  .welcome-para{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .post-image-anime{
+    width: 280px;
+    height: 280px;
+  }
+  .features{
+    margin-top: 30px;
+  }
+  .features-title{
+    margin-bottom: 40px;
+  }
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .feature-list{
+    padding: 18px 30px;
+    border-radius: 30px;
+  }
+  .feature-list-title{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .feature-list-content{
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+
+  }
+  .why-ts-wp{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .detail{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+  .aim{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+  .aim-grid{
+    margin:30px 20px;
+    column-gap: 20px;
+  }
+  .aim-grid div{
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-weight: 300;
+  }
+  .aim-grid div p{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .journey-title{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .journey-detail{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postify</title>
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/leftSideBar.css">
+  <link rel="stylesheet" href="/styles/New Post/main.css">
+  <link rel="stylesheet" href="/styles/delete.css">
+  <link rel="stylesheet" href="/styles/Lists/list.css">
+  <link rel="stylesheet" href="/styles/view.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="header">
+      <div>
+        <a href="/" title="Postify"><p class="postify">Postify</p></a>
+      </div>
+
+      <div class="right-header js-right-header">
+       
+          <div class="new nav" title="Create new post">
+            <a href="/new">+ New</a>
+        </div>
+        <div class="list nav" title="Post list">
+            <a href="/list">List</a>
+        </div>
+        <div class="about nav" title="See about me">
+            <a href="/about">About</a>
+        </div>
+        <div class="contact nav" title="Contact me">
+            <a href="/contact">Contact</a>
+        </div>
+      </div>
+      <div class="menu-bar js-menu-bar">
+        <img src="/images/Menu bar.svg" alt="MenuBar" class="menu-bar-icon " title="Menu Bar">
+      </div>
+    </nav>
+
+    <%-include("leftSideBar.ejs") %>
+
+  </header>
+  <main class="main">
+  

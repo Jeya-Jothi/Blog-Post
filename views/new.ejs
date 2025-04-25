@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+<!-- post - existingData -->
+<div class="input-field">
+  <p class="info-para">Create New Post</p>
+
+  <form action=<%= post? `/edit/${indexId}` : `/post` %> method="POST">
+
+    <div class="grid-temp">
+      <label for="title" class="title-label">Title</label>
+      <textarea type="text" name="title" class="title-b" required><%= post ? post.title : "" %></textarea>
+      <label for="content" class="content-label">Content</label>
+      <textarea type="text" name="content" class="content-b" required><%= post ? post.content : "" %></textarea>
+    </div>
+
+<!-- Post button -->
+    <div class="post">
+      <button type="submit" class="js-post-button"><% if(post){ %>Update<% } else{%>Post<% } %></button>
+    </div>
+
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+  <p class="title-view"><%= post.title%></p>
+
+
+<div class="view-content">
+  <div class="edit-date">
+    <div>
+      <div class="edit">
+        <img src="/images/edit icon.svg" alt="edit logo" class="edit-icon js-edit-icon" data-id="<%= indexId %>">
+        <div class="tooltip"><p>Edit</p></div>
+      </div>
+    </div>
+    <div class="time-date">
+      <p class="time-date-view"><%= post.time%> | <%= post.date %></p>
+    </div>
+  </div>
+  <div>
+    <p class="content-view"><%= post.content%></p>
+  </div>
+  </div>
+  
+
+<%- include("partials/footer") %>

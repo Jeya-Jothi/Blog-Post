@@ -1,0 +1,20 @@
+<div class="left-side-bar">
+  <div>
+    <a href="/"><img src="/images/POSTIFY logo.svg" alt="POstify logo" class="logo" title="POSTIFY"></a>
+  </div>
+  <div class="easy-nav-side-bar">
+    <form action="/"><a href="/">
+    <div><p>Home</p></div></a></form>
+    <div><p>About</p></div>
+    <div><p>Contact</p></div>
+    
+  </div>
+  <form action="/list" method="GET">
+    <a href="/list">
+  <div class="total-post">
+    <div><p class="total-p">Total Posts</p></div>
+    <div><p class="count"><%= fullMessage.length %></p></div>
+  </div>
+</a>
+</form>
+</div>
